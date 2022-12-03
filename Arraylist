@@ -1,0 +1,63 @@
+package array;
+import java.util.*;
+public class arrraylist {
+	public static void main(String[] args) {
+	ArrayList a	=new ArrayList();
+		a.add(100);
+		a.add(200);
+		a.add(0);
+		a.add(0);
+		a.add(200);	
+		System.out.println(a);
+		System.out.println(a.size());	
+		ArrayList b	=new ArrayList();
+		b.add(200);
+		b.add("mohan");
+		b.add("shubham");
+		b.add(null);
+		b.add(null);	
+		System.out.println(b);
+		System.out.println(b.size());
+		b.addAll(a);
+		b.add(0,"mohanki");	
+		System.out.println("-----------------------------------------------------");
+		Iterator itr=a.iterator();
+	while(itr.hasNext())                      //iterator
+	{
+		System.out.println(itr.next());
+	}
+	System.out.println("------------------- listiterator----------------------------------");
+	ListIterator litr=a.listIterator();
+	while(litr.hasPrevious())
+	{
+		System.out.println(litr.previous());
+	}	
+	while(litr.hasNext())
+	{
+		System.out.println(litr.next());
+	}
+	System.out.println("-----------------------------------------------------");
+		System.out.println("-----------------------------------------------------");
+	for(Object c:a)
+	{
+		System.out.println(c);            //for each loop
+	}
+		System.out.println("-----------------------------------------------------");
+		for(int i=0;i<a.size();i++)
+		{
+			System.out.println(b.get(i));        //get (int index)
+		}
+		System.out.println("-----------------------------------------------------");
+		Collections.sort(a);
+		System.out.println(a);	
+		Collections.reverse(a);
+		System.out.println(a);
+//	System.out.println(b.containsAll(a));
+//		System.out.println(a.size());	
+	//	b.remove(0);
+	//	b.remove(null);
+		//b.clear();
+	//	b.removeAll(a);
+	//	System.out.println(b);	
+	}
+	}
