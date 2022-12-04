@@ -1,0 +1,35 @@
+package set;
+import java.util.*;
+public class set {
+
+	public static void main(String[] args) {
+	HashSet hs	=new HashSet();
+		hs.add("mohan");
+		hs.add(100);
+		hs.add(200);
+		hs.add(null);
+		hs.add(null);
+		hs.add(null);
+		System.out.println(hs);
+		
+	System.out.println("------------------------");	
+	LinkedHashSet lhs	=new LinkedHashSet();
+		lhs.add(100);
+		lhs.add("mohasm");
+		lhs.add(200);
+		lhs.add(null);
+		lhs.add(null);
+		System.out.println(lhs);
+		System.out.println("------------------------");	
+		
+
+	TreeSet tse	=new TreeSet();
+	tse.add("nhg");
+		tse.add("mjhh");
+		tse.add("jjjj");
+		tse.add("ghgfv");
+		
+		System.out.println(tse.descendingSet());	
+	}
+
+}
