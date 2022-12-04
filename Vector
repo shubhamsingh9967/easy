@@ -1,0 +1,53 @@
+package vector;
+import java.util.Iterator;
+import java.util.ListIterator;
+import  java.util.Vector;
+public class vector {
+
+	public static void main(String[] args) {
+		
+		
+	Vector v	= new Vector();
+	v.add("arjun");
+	v.add("sandesh");
+	v.add("arjun");
+	v.add(null);
+	v.add(null);
+	System.out.println(v);
+	
+	
+	
+	v.remove(0);
+	System.out.println(v);
+//	v.removeAll(v);
+//	System.out.println(v);
+	System.out.println(v.contains("arjun"));
+	
+	System.out.println("----------------  get method----------------------");
+	for(int i=0;i<v.size();i++) {
+		System.out.println(v.get(i));
+	}
+	System.out.println("----------------  for each loop method----------------------");
+	for(Object obj:v) {
+		System.out.println(obj);
+	}
+	System.out.println("----------------  iterator  method----------------------");
+             
+	      Iterator itr      =v.iterator();
+	      while(itr.hasNext()) {
+	    	  System.out.println(itr.next());
+	      }
+	      System.out.println("----------------  Listiterator  method----------------------");
+	 ListIterator litr   =  v.listIterator();
+	      while(litr.hasNext()) {
+	    	  System.out.println(litr.next());
+	      }
+	      System.out.println("--------------------");
+	     while(litr.hasPrevious())
+	     {
+	    	 System.out.println(litr.previous());
+	     }
+	      
+	}
+
+}
