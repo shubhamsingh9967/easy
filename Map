@@ -1,0 +1,67 @@
+package anan;
+import java.util.*;
+
+import javax.imageio.plugins.tiff.GeoTIFFTagSet;
+
+public class p6 {
+
+	public static void main(String[] args) {
+		
+HashMap hm	=	new HashMap();
+
+		hm.put("djdjf", "hhjj");
+		hm.put("adjdjf", "hhjj");
+		hm.put('d', "mohan");
+		hm.put('c', "mohan");
+		hm.put(0, 200);
+		hm.put(0, 300);
+	
+		hm.put(1, null);
+		hm.put(null, null);
+		hm.put(0, 400);
+		
+		System.out.println(hm);
+		
+		
+		HashMap hm1	=	new HashMap();
+		hm1.put(1, "raghav");
+		hm1.put(2, "mhiaih");
+		System.out.println(hm1);
+		hm.putAll(hm1);
+		hm.remove(1);
+		//hm.clear();
+	
+		System.out.println(hm.containsKey(2));
+		System.out.println(hm.containsValue("mohand"));
+		
+		System.out.println(hm.keySet());
+		System.out.println(hm.values());
+		
+	LinkedHashMap lhm	=new LinkedHashMap();
+	lhm.put(1, 200);
+	lhm.put(null, "mohan");
+	lhm.put(2, 300);
+	lhm.put(null, 600);
+	lhm.put(1,5000);
+	lhm.put(1, 2000);
+	System.out.println(lhm);
+		
+		
+	TreeMap tmp	=new TreeMap();
+	tmp.put(5, "shubham");
+	tmp.put(1, 200);
+	tmp.put(2, "rohan");
+	System.out.println(tmp.descendingMap());
+	//	System.out.println(tmp.pollFirstEntry());
+		//System.out.println(tmp.pollLastEntry());
+	
+	
+		//System.out.println(tmp.entrySet());
+Set s	=tmp.entrySet();
+	System.out.println("--------------------------");
+for(Object obj:s) {
+	System.out.println(obj);
+}
+	}
+
+}
