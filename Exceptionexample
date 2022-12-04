@@ -1,0 +1,15 @@
+package anan;
+
+public class Exception {
+
+	public static void main(String[] args) {
+		
+		
+		
+		class.forName("");//compiler ware(checked)
+		
+		System.out.println(4/0);//compiler unaware(unchecked)
+
+	}
+
+}
