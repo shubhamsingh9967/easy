@@ -1,0 +1,20 @@
+package anan;
+
+public class Exceptiontry {
+
+	public static void main(String[] args) {
+		
+		try {
+			System.out.println(100);
+			System.out.println(4/0);
+		}catch(ArithmeticException ax)
+		{
+			
+		}
+		finally {
+			System.out.println("ho gaya");
+		}		
+		
+	}
+
+}
