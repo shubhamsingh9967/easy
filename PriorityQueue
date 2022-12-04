@@ -1,0 +1,23 @@
+package anan;
+import java.util.*;
+public class PriorityQues {
+
+	public static void main(String[] args) {
+		
+		
+		
+	PriorityQueue pq	=new PriorityQueue();
+		
+	pq.offer("mohan");
+	pq.offer("rohan");
+	pq.offer("mohan");
+	pq.offer("rohan");
+		pq.offer("mohan");
+		pq.add("shiwangi");
+		System.out.println(pq);
+		
+		
+		
+	}
+
+}
