@@ -1,0 +1,18 @@
+package anan;
+import java.util.*;
+public class Stack1 {
+
+	public static void main(String[] args) {
+	Stack s	=new Stack();
+s.push("mohan");
+s.add("fgjh");
+s.push("dilgai");
+System.out.println(s);
+for(int i=0;i<s.size();i++)
+{
+	System.out.println(s.get(i));
+	
+}
+	}
+
+}
