@@ -1,0 +1,29 @@
+package encaps;
+
+ class Atm
+{
+	 private double money=95000;
+	 public  double getMoney() {
+		return money;
+	}
+	 public void setMoney(double money) {
+		this.money=money;
+	}
+	public void withraw() {
+		System.out.println("you can withdraw the money");
+	}
+}
+
+
+public class Sbibank {
+
+	public static void main(String[] args) {
+		
+       Atm at=new Atm();
+       at.setMoney(180000);
+System.out.println(at.getMoney());
+		at.withraw();
+		
+	}
+
+}
