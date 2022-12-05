@@ -1,0 +1,47 @@
+package encaps;
+
+
+
+
+	  class Emp
+	 {
+		 String ename;
+		private	double sal;
+			int id;
+		 
+		 public double getSal() {
+			return sal;
+		}
+		 public void setSal(double sal) {
+			this.sal=sal;
+		}
+		 
+		  Emp(String ename,int id,double sal)
+		 
+		 {
+			 this.ename=ename;
+			 this.id=id;
+			 this.sal=sal;
+			 
+		 } 
+		}
+	
+	  public class Employeencapsulation {
+			 public static void main(String[] args)
+			 {
+				
+			Emp d=new Emp("shubham",10,25000);
+				System.out.println(d.ename);
+			System.out.println(d.id);
+			d.setSal(128200);
+			System.out.println(d.getSal());
+			System.out.println("-----------------------------");
+			Emp r=new Emp("raghav",20,28000);
+			System.out.println(r.ename);
+		System.out.println(r.id);
+		r.setSal(1305100);
+		System.out.println(r.getSal());	
+			}
+			
+		}
+
