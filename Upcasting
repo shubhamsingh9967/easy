@@ -1,0 +1,27 @@
+package casting;
+
+public class Upcasting {
+
+	int a=15;
+
+}
+class Downcasting extends Upcasting{
+	int b=10;
+}
+class main{
+public static void main(String[] args)
+{
+		
+       Downcasting dc = new Downcasting();
+       System.out.println(dc.a);
+       System.out.println(dc.b);
+       
+       
+       Upcasting up = new Downcasting();   //upcasting
+       
+       System.out.println(up.a);
+     //  System.out.println(up.b);  // error b can not be fined
+       
+       
+	}
+}
