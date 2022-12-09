@@ -1,0 +1,20 @@
+public class lowercaseintouppercase {
+
+	public static void main(String[] args) {
+		
+		
+		String s="shubham";
+	char	c []=s.toCharArray();
+		for(int i=0;i<s.length();i++) {
+			if(c[i]>='a' && c[i]<='z')
+			{
+				c[i]=   ( char) (c[i]-32);
+			}
+			}
+		
+		
+		s=new String(c);
+		System.out.println(s);
+		}
+
+	}
