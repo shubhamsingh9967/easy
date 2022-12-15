@@ -1,0 +1,42 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class wajptofetchallrecordbyusingpreparedstatement {
+	public static void main(String[] args) {
+		
+	
+//wajp to fetch the particular row from the database by using the concept of placeholder .
+	String qry = "select * from prod.info";
+	String url ="jdbc:mysql://localhost:3306?user=root&password=Y1012Jqkhkp1";
+	
+	try
+	{
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		System.out.println("Step 1 done");
+		Connection con= DriverManager.getConnection(url);
+		System.out.println("Step 2 done");
+		PreparedStatement pstmt= con.prepareStatement(qry);
+		System.out.println("Step 3 done");
+	
+ResultSet rs	=pstmt.executeQuery(qry);
+		
+		
+		while(rs.next())
+		{
+		int id	=rs.getInt(1);
+		String name=rs.getString(2);
+		System.out.println("id:->"+id+"name:->"+name);
+		}	
+		System.out.println("data inserted......");
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+
+}
+}
