@@ -1,0 +1,29 @@
+package jdbc;
+
+import java.sql.*;
+import java.sql.DriverManager;
+
+public class jdbc_demo {
+
+	public static void main(String[] args) {
+		String qry = "insert into student1.info values(69,'arjun')";
+		String url ="jdbc:mysql://localhost:3306?user=root&password=Y1012Jqkhkp1";
+		
+		try
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Step 1 done");
+			Connection con= DriverManager.getConnection(url);
+			System.out.println("Step 2 done");
+			PreparedStatement pstmt= con.prepareStatement(qry);
+			System.out.println("Step 3 done");
+		
+	   pstmt.executeUpdate();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+}
