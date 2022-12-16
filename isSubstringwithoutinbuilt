@@ -1,0 +1,33 @@
+package pattern;
+
+public class IsSubstring {
+
+	public static void main(String[] args) {
+		String str1="madam";
+		String str2="madam";
+		int c=0;
+		boolean d=false;
+	for (int i = 0; i < str1.length(); i++) 
+	{
+		if(str1.charAt(i)==str2.charAt(c))
+		{
+			c++;
+			if(c==str2.length())
+			{
+				System.out.println("true");
+				d=true;
+				break;
+			}
+		} else if(c>0){
+			c=0;
+		}	
+	}
+	if(d==false) 
+	{
+	System.out.println("false");
+	}
+	}
+}
+	
+	
+
