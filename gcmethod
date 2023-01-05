@@ -1,0 +1,17 @@
+package print;
+
+public class gcmethod {
+
+	public static void main(String[] args) {
+	
+		System.out.println(new gcmethod());
+	new gcmethod();
+	new gcmethod();
+	new gcmethod();
+System.gc();
+	}
+	
+	public void finalize() {
+		System.out.println("performing cleanup activity");
+	}
+}
