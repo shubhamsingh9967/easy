@@ -1,0 +1,20 @@
+package print;
+
+public class tentoonewithoutusingloop {
+
+	private static void name(int a) {
+		
+	if(a>=1)	{
+		System.out.println(a);
+		a--;
+		name(a);
+	}
+		
+		
+	}
+public static void main(String[] args) {
+	name(10);
+
+	}
+
+}
