@@ -1,0 +1,21 @@
+package print;
+
+public class onttofivewithoutloop {
+
+	public static void method(int a) {
+	
+		if(a<=5) {
+		System.out.println(a);
+		a++;
+		method(a);
+		
+		}
+	}
+		
+	public static void main(String[] args) {
+		method(1);
+		
+
+	}
+
+}
